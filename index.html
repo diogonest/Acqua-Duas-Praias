@@ -511,7 +511,68 @@ var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false
 if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
 images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
 if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script><script>function lazyLoadThumb(e,alt,l){var t='<img data-lazy-src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"><noscript><img src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"></noscript>',a='<button class="play" aria-label="play Youtube video"></button>';if(l){t=t.replace('data-lazy-','');t=t.replace('loading="lazy"','');t=t.replace(/<noscript>.*?<\/noscript>/g,'');}t=t.replace('alt=""','alt="'+alt+'"');return t.replace("ID",e)+a}function lazyLoadYoutubeIframe(){var e=document.createElement("iframe"),t="ID?autoplay=1";t+=0===this.parentNode.dataset.query.length?"":"&"+this.parentNode.dataset.query;e.setAttribute("src",t.replace("ID",this.parentNode.dataset.src)),e.setAttribute("frameborder","0"),e.setAttribute("allowfullscreen","1"),e.setAttribute("allow","accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"),this.parentNode.parentNode.replaceChild(e,this.parentNode)}document.addEventListener("DOMContentLoaded",function(){var exclusions=[];var e,t,p,u,l,a=document.getElementsByClassName("rll-youtube-player");for(t=0;t<a.length;t++)(e=document.createElement("div")),(u='https://i.ytimg.com/vi/ID/hqdefault.jpg'),(u=u.replace('ID',a[t].dataset.id)),(l=exclusions.some(exclusion=>u.includes(exclusion))),e.setAttribute("data-id",a[t].dataset.id),e.setAttribute("data-query",a[t].dataset.query),e.setAttribute("data-src",a[t].dataset.src),(e.innerHTML=lazyLoadThumb(a[t].dataset.id,a[t].dataset.alt,l)),a[t].appendChild(e),(p=e.querySelector(".play")),(p.onclick=lazyLoadYoutubeIframe)});</script>
-<script>var rocket_beacon_data = {"ajax_url":"https:\/\/acquaduaspraias.com.br\/wp-admin\/admin-ajax.php","nonce":"0050c4e244","url":"https:\/\/acquaduaspraias.com.br","is_mobile":false,"width_threshold":1600,"height_threshold":700,"delay":500,"debug":null,"status":{"atf":true,"lrc":true},"elements":"img, video, picture, p, main, div, li, svg, section, header, span","lrc_threshold":1800}</script><script data-name="wpr-wpr-beacon" src='wp-content/plugins/wp-rocket/assets/js/wpr-beacon.min.js' async></script><script>class RocketElementorAnimation{constructor(){this.deviceMode=document.createElement("span"),this.deviceMode.id="elementor-device-mode-wpr",this.deviceMode.setAttribute("class","elementor-screen-only"),document.body.appendChild(this.deviceMode)}_detectAnimations(){let t=getComputedStyle(this.deviceMode,":after").content.replace(/"/g,"");this.animationSettingKeys=this._listAnimationSettingsKeys(t),document.querySelectorAll(".elementor-invisible[data-settings]").forEach(t=>{const e=t.getBoundingClientRect();if(e.bottom>=0&&e.top<=window.innerHeight)try{this._animateElement(t)}catch(t){}})}_animateElement(t){const e=JSON.parse(t.dataset.settings),i=e._animation_delay||e.animation_delay||0,n=e[this.animationSettingKeys.find(t=>e[t])];if("none"===n)return void t.classList.remove("elementor-invisible");t.classList.remove(n),this.currentAnimation&&t.classList.remove(this.currentAnimation),this.currentAnimation=n;let s=setTimeout(()=>{t.classList.remove("elementor-invisible"),t.classList.add("animated",n),this._removeAnimationSettings(t,e)},i);window.addEventListener("rocket-startLoading",function(){clearTimeout(s)})}_listAnimationSettingsKeys(t="mobile"){const e=[""];switch(t){case"mobile":e.unshift("_mobile");case"tablet":e.unshift("_tablet");case"desktop":e.unshift("_desktop")}const i=[];return["animation","_animation"].forEach(t=>{e.forEach(e=>{i.push(t+e)})}),i}_removeAnimationSettings(t,e){this._listAnimationSettingsKeys().forEach(t=>delete e[t]),t.dataset.settings=JSON.stringify(e)}static run(){const t=new RocketElementorAnimation;requestAnimationFrame(t._detectAnimations.bind(t))}}document.addEventListener("DOMContentLoaded",RocketElementorAnimation.run);</script></body>
+<script>var rocket_beacon_data = {"ajax_url":"https:\/\/acquaduaspraias.com.br\/wp-admin\/admin-ajax.php","nonce":"0050c4e244","url":"https:\/\/acquaduaspraias.com.br","is_mobile":false,"width_threshold":1600,"height_threshold":700,"delay":500,"debug":null,"status":{"atf":true,"lrc":true},"elements":"img, video, picture, p, main, div, li, svg, section, header, span","lrc_threshold":1800}</script><script data-name="wpr-wpr-beacon" src='wp-content/plugins/wp-rocket/assets/js/wpr-beacon.min.js' async></script><script>class RocketElementorAnimation{constructor(){this.deviceMode=document.createElement("span"),this.deviceMode.id="elementor-device-mode-wpr",this.deviceMode.setAttribute("class","elementor-screen-only"),document.body.appendChild(this.deviceMode)}_detectAnimations(){let t=getComputedStyle(this.deviceMode,":after").content.replace(/"/g,"");this.animationSettingKeys=this._listAnimationSettingsKeys(t),document.querySelectorAll(".elementor-invisible[data-settings]").forEach(t=>{const e=t.getBoundingClientRect();if(e.bottom>=0&&e.top<=window.innerHeight)try{this._animateElement(t)}catch(t){}})}_animateElement(t){const e=JSON.parse(t.dataset.settings),i=e._animation_delay||e.animation_delay||0,n=e[this.animationSettingKeys.find(t=>e[t])];if("none"===n)return void t.classList.remove("elementor-invisible");t.classList.remove(n),this.currentAnimation&&t.classList.remove(this.currentAnimation),this.currentAnimation=n;let s=setTimeout(()=>{t.classList.remove("elementor-invisible"),t.classList.add("animated",n),this._removeAnimationSettings(t,e)},i);window.addEventListener("rocket-startLoading",function(){clearTimeout(s)})}_listAnimationSettingsKeys(t="mobile"){const e=[""];switch(t){case"mobile":e.unshift("_mobile");case"tablet":e.unshift("_tablet");case"desktop":e.unshift("_desktop")}const i=[];return["animation","_animation"].forEach(t=>{e.forEach(e=>{i.push(t+e)})}),i}_removeAnimationSettings(t,e){this._listAnimationSettingsKeys().forEach(t=>delete e[t]),t.dataset.settings=JSON.stringify(e)}static run(){const t=new RocketElementorAnimation;requestAnimationFrame(t._detectAnimations.bind(t))}}document.addEventListener("DOMContentLoaded",RocketElementorAnimation.run);</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var form = document.querySelector('form.elementor-form');
+  if (!form) return;
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    var nome = document.getElementById('form-field-name').value.trim();
+    var email = document.getElementById('form-field-email').value.trim();
+    var celular = document.getElementById('form-field-message').value.trim();
+    var btnSubmit = form.querySelector('button[type="submit"]');
+    var btnText = btnSubmit.querySelector('.elementor-button-text');
+    var textoOriginal = btnText.textContent;
+
+    // Desabilita o botão e mostra loading
+    btnSubmit.disabled = true;
+    btnText.textContent = 'Enviando...';
+
+    // Remove mensagem anterior se existir
+    var msgAnterior = form.parentNode.querySelector('.form-msg');
+    if (msgAnterior) msgAnterior.remove();
+
+    fetch('https://script.google.com/macros/s/AKfycbynFhnvlRoxL-82YxI_Udj2h18dyCr63Nx3LHNFikdRpfvSWeP1isv5tQbNLobxf_hI/exec', {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ nome: nome, email: email, celular: celular })
+    })
+    .then(function() {
+      // Mostra mensagem de sucesso
+      var msg = document.createElement('div');
+      msg.className = 'form-msg';
+      msg.style.cssText = 'background:#2bb8b1;color:#fff;padding:14px 20px;border-radius:8px;margin-top:16px;text-align:center;font-family:Montserrat,sans-serif;font-size:15px;font-weight:600;';
+      msg.textContent = '✓ Dados enviados com sucesso! Em breve entraremos em contato.';
+      form.parentNode.appendChild(msg);
+
+      // Limpa o formulário
+      form.reset();
+      btnText.textContent = textoOriginal;
+      btnSubmit.disabled = false;
+
+      // Remove a mensagem após 6 segundos
+      setTimeout(function() { msg.remove(); }, 6000);
+    })
+    .catch(function() {
+      var msg = document.createElement('div');
+      msg.className = 'form-msg';
+      msg.style.cssText = 'background:#e74c3c;color:#fff;padding:14px 20px;border-radius:8px;margin-top:16px;text-align:center;font-family:Montserrat,sans-serif;font-size:15px;font-weight:600;';
+      msg.textContent = '✗ Erro ao enviar. Por favor, tente novamente.';
+      form.parentNode.appendChild(msg);
+
+      btnText.textContent = textoOriginal;
+      btnSubmit.disabled = false;
+
+      setTimeout(function() { msg.remove(); }, 6000);
+    });
+  });
+});
+</script>
+</body>
 </html>
 
 <!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1786482594 -->
