@@ -433,6 +433,7 @@ da cerca
 				</div>
 		<div class="elementor-element elementor-element-e2fdbe1 e-flex e-con-boxed e-con e-parent" data-id="e2fdbe1" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 					<div class="e-con-inner">
+				<div class="claude-footer-brand"><img src="/wp-content/uploads/2025/03/Objeto-Inteligente-de-Vetor-4.png" alt="Acqua Duas Praias" class="claude-footer-logo"><a href="https://www.instagram.com/vargas_construtora?stkn=MTB1eWp5eGpuNTd0&#038;utm_source=qr" target="_blank" rel="noopener" class="claude-instagram-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>Siga no Instagram</a></div>
 				<div class="elementor-element elementor-element-f9655e7 elementor-widget__width-initial elementor-widget-tablet__width-inherit elementor-widget elementor-widget-text-editor" data-id="f9655e7" data-element_type="widget" data-widget_type="text-editor.default">
 									<p>Todos os mapas, fotos, perspectivas e plantas contidos neste material são meramente ilustrativos e seus elementos de composição podem sofrer alterações de cor, forma, textura e tamanho. As unidades privativas e áreas comuns serão entregues obedecendo ao projeto executivo e conforme as especificações constantes do Memorial Descritivo anexo ao Contrato de Compra e Venda, que prevalecerá em caso de conflito com qualquer outro material e/ou informação relativos ao empreendimento. A decoração, iluminação, equipamentos e mobiliário das unidades privativas são apenas sugestões, não fazendo parte das obrigações de entrega. A montagem e decoração das áreas comuns e de lazer serão entregues de acordo com os Projetos Executivos de Interiores e Memorial Descritivo. Os equipamentos, mobiliário e elementos decorativos (quadros, tapetes, almofadas, cortinas, luminárias) constantes do presente material são referenciais e poderão passar por revisão de modelos, especificações e quantidades, sem aviso-prévio.</p>								</div>
 				<div class="elementor-element elementor-element-cdb6006 elementor-widget__width-auto elementor-fixed elementor-widget elementor-widget-image" data-id="cdb6006" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;fixed&quot;}" data-widget_type="image.default">
@@ -620,6 +621,44 @@ document.addEventListener('DOMContentLoaded', function() {
 .elementor-element-d44bce5 img{
   border-radius:20px !important;
   box-shadow:0 18px 40px rgba(43,32,23,.22) !important;
+}
+
+/* ---------- Logo + botão do Instagram no rodapé ---------- */
+.claude-footer-brand{
+  display:flex;flex-direction:column;align-items:flex-start;gap:22px;
+  margin-right:auto;
+  padding-right:20px;
+}
+.claude-footer-logo{
+  width:170px;height:auto;display:block;
+}
+.claude-instagram-btn{
+  display:inline-flex;align-items:center;gap:10px;
+  padding:14px 32px;
+  background:#ffffff;
+  color:#4A3A2F;
+  font-family:"Montserrat", Sans-serif;
+  font-size:13px;font-weight:600;
+  text-transform:uppercase;letter-spacing:2px;
+  text-decoration:none;
+  position:relative;overflow:hidden;
+  transition:transform .35s var(--claude-ease),box-shadow .35s var(--claude-ease);
+}
+.claude-instagram-btn:hover{
+  transform:translateY(-2px);
+  box-shadow:0 10px 26px rgba(0,0,0,.28);
+}
+.claude-instagram-btn svg{width:18px;height:18px;flex-shrink:0;}
+.claude-instagram-btn::after{
+  content:'';position:absolute;top:0;left:-60%;width:40%;height:100%;
+  background:linear-gradient(120deg,transparent,rgba(74,58,47,.15),transparent);
+  transform:skewX(-20deg);
+  transition:left .75s var(--claude-ease);
+  pointer-events:none;
+}
+.claude-instagram-btn:hover::after{left:130%;}
+@media (max-width:767px){
+  .claude-instagram-btn{padding:13px 26px;}
 }
 
 /* Botão voltar ao topo */
@@ -1107,6 +1146,7 @@ body.claude-lightbox-active #claude-sticky-header{display:none !important;}
   })();
 })();
 </script>
+
 
 
 
