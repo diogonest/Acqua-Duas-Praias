@@ -214,8 +214,7 @@ da cerca
 		<div class="elementor-element elementor-element-84f612a e-flex e-con-boxed e-con e-child" data-id="84f612a" data-element_type="container">
 					<div class="e-con-inner">
 		<div class="elementor-element elementor-element-013e9c3 e-con-full e-flex e-con e-child" data-id="013e9c3" data-element_type="container">
-				<div class="elementor-element elementor-element-f4fc62e elementor-widget elementor-widget-image" data-id="f4fc62e" data-element_type="widget" data-widget_type="image.default">
-															<img decoding="async" width="180" height="262" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20180%20262'%3E%3C/svg%3E" class="attachment-full size-full wp-image-156" alt="" data-lazy-src="/wp-content/uploads/2025/03/Objeto-Inteligente-de-Vetor-6.png" /><noscript><img loading="lazy" decoding="async" width="180" height="262" src="../wp-content/uploads/2025/03/Objeto-Inteligente-de-Vetor-6.png" class="attachment-full size-full wp-image-156" alt="" /></noscript>															</div>
+				
 		<div class="elementor-element elementor-element-4dbdcbb e-con-full e-flex e-con e-child" data-id="4dbdcbb" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 				<div class="elementor-element elementor-element-fa3470c elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="fa3470c" data-element_type="widget" data-widget_type="icon-list.default">
 							<ul class="elementor-icon-list-items">
@@ -551,6 +550,16 @@ if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_c
 /* Hover na galeria, mais suave e com leve brilho */
 .swiper-slide-inner{overflow:hidden;transition:transform 1.5s var(--claude-ease-soft),box-shadow 1.5s var(--claude-ease-soft);}
 .swiper-slide-image{transition:transform 1.6s var(--claude-ease-soft),filter 1.4s ease;will-change:transform;}
+
+/* Cantos arredondados + sombra suave nas fotos principais, pra visual mais premium */
+.swiper-slide-inner{border-radius:16px;}
+.swiper-slide-image{border-radius:16px;}
+.elementor-element-6b08dee img,
+.elementor-element-9998441 img,
+.elementor-element-d44bce5 img{
+  border-radius:20px !important;
+  box-shadow:0 18px 40px rgba(43,32,23,.22) !important;
+}
 
 /* Botão voltar ao topo */
 #claude-back-to-top{position:fixed;right:24px;bottom:100px;width:48px;height:48px;border-radius:50%;background:#4A3A2F;color:#fff;border:none;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 6px 20px rgba(74,58,47,.35);opacity:0;visibility:hidden;transform:translateY(16px) scale(.9);transition:opacity .5s var(--claude-ease),transform .5s var(--claude-ease),visibility .5s,background .25s ease,box-shadow .25s ease;z-index:9998;}
@@ -1037,6 +1046,7 @@ body.claude-lightbox-active #claude-sticky-header{display:none !important;}
   })();
 })();
 </script>
+
 
 </body>
 </html>
